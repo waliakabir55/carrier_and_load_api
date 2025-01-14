@@ -1,0 +1,7 @@
+# Environment
+.env
+.env.*
+
+# Deployment packages
+deployment/package/
+deployment/lambda_function.zip 
