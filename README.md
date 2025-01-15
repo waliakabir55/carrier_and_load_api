@@ -53,22 +53,21 @@ carrier_and_load_api/
 
 - **carrier_verification**: Contains the FastAPI application for carrier verification and load management.
   - `app/`: The main application code, including API routes, database models, and configuration.
-  - `deploy.sh`: Script for deploying the application to AWS Lambda.
-  - `.env.example`: Example environment file for configuration.
+  - `deploy.sh`: Script for creating the zip file containing the handler for deployment with AWS Lambda.
   - `requirements.txt`: Python dependencies for the application.
 
 - **data_uploads_lambda**: Contains the AWS Lambda function for uploading CSV data to the database.
-  - `app/`: The Lambda function code.
-  - `deploy.sh`: Script for deploying the Lambda function.
+  - `app/`: The main application code that uploads CSV data to the PostgreSQL AWS RDS instance. 
+  - `deploy.sh`: Script for creating the zip file containing the handler for deployment with AWS Lambda.
   - `requirements.txt`: Python dependencies for the Lambda function.
 
 ## Built with
 
-- **FastAPI**: Used to build the main API for carrier verification and load management, providing high performance and easy integration with asynchronous programming.
-- **SQLAlchemy**: Employed as the ORM to interact with the PostgreSQL database, allowing for efficient data modeling and manipulation.
+- **FastAPI**: Used to build the main API for carrier verification and load management.
+- **SQLAlchemy**: Employed as the ORM to interact with the PostgreSQL database.
 - **AWS Lambda**: Utilized for deploying the Data Uploads Lambda function, enabling serverless execution of code in response to events without managing servers.
-- **Pydantic**: Used for data validation and settings management, ensuring that incoming request data adheres to the expected formats and types.
-- **PostgreSQL using AWS RDS (instance and proxy)**: Chosen as the relational database to store carrier and load data, providing robust data integrity and support for complex queries.
+- **Pydantic**: Used for data validation and settings management.
+- **PostgreSQL using AWS RDS (instance and proxy)**: Chosen as the relational database to store load data, providing robust data integrity and support for complex queries.
 
 ## Deployment
 
