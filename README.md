@@ -80,7 +80,8 @@ The deployment scripts are designed to package the application and its dependenc
 2. Set up your virtual environment and install dependencies using `pip install -r requirements.txt`.
 3. Configure your `.env` file based on `.env.example`.
 4. Run the application locally using `uvicorn carrier_verification.app.main:app --reload`.
-5. Deploy to AWS Lambda using the provided `deploy.sh` scripts.
+5. Create the Lambda handler zip file using the provided `deploy.sh` scripts.
+6. Upload the zip file to AWS Lambda.
 
 ## Docker
 See docker folder. 
