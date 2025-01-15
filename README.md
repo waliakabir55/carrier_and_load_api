@@ -38,6 +38,15 @@ carrier_and_load_api/
 |
 |-- .gitignore
 |-- README.md
+`-- docker/
+    |-- README.md
+    |-- docker-compose.yml
+    |-- docker-compose.prod.yml
+    |-- Dockerfile
+    |-- Dockerfile.prod
+    |-- db/
+    |   |-- init.sql
+    `-- .dockerignore
 ```
 
 - **carrier_verification**: Contains the FastAPI application for carrier verification and load management.
@@ -71,6 +80,5 @@ The deployment scripts are designed to package the application and its dependenc
 4. Run the application locally using `uvicorn carrier_verification.app.main:app --reload`.
 5. Deploy to AWS Lambda using the provided `deploy.sh` scripts.
 
-## Docker (TODO: add documentation for docker)
-
-For more detailed instructions, refer to the individual `README.md` files within each subdirectory.
+## Docker
+See docker folder. 

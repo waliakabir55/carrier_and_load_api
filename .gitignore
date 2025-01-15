@@ -4,22 +4,64 @@ __pycache__/
 *.pyo
 *.pyd
 *.pdb
+.Python
+*.so
 
-# Environment
+# Environment variables
 .env
 .env.*
+!.env.example
+*.env
 
 # Virtual environments
 venv/
+env/
+ENV/
 deployment/venv/
 
 # Deployment packages
 deployment/package/
 deployment/lambda_function.zip
+*.zip
 
-# Logs
+# Logs and databases
 *.log
+*.sqlite
+*.db
 
-# IDEs
+# IDEs and editors
 .vscode/
-.idea/ 
+.idea/
+*.swp
+*.swo
+.DS_Store
+*.sublime*
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# SSL/TLS certificates
+*.pem
+*.key
+*.crt
+*.cer
+*.der
+*.priv
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Local development
+local_settings.py
+db.sqlite3
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover 
