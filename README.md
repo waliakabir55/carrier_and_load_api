@@ -1,6 +1,8 @@
 # Carrier and Load API
 
-This repository contains the codebase for the Carrier Verification and Load Management API, as well as the Data Uploads Lambda function. The project is structured to facilitate easy deployment and management of carrier and load data.
+This repository contains the codebase for the Carrier Verification and Load Management API. Here's an architecture overview:
+
+![alt text](<Screenshot 2025-01-15 at 9.15.35 AM.png>)
 
 ## Project Structure
 
