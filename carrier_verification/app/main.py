@@ -21,6 +21,9 @@ from mangum import Mangum
 import logging
 from .config import settings
 from .api import carrier, load
+from .db.database import get_db
+from sqlalchemy import text
+from fastapi import HTTPException
 
 # Configure logging
 logging.basicConfig(
@@ -53,8 +56,14 @@ async def root():
     return {"message": "Welcome to Carrier Verification API"}
 
 @app.get("/health", tags=["health"])
-async def health():
-    return {"status": "ok"}
+async def health_check():
+    try:
+        # Test database connection
+        db = next(get_db())
+        db.execute(text("SELECT 1"))
+        return {"status": "healthy", "database": "connected"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 # Lambda handler
 handler = Mangum(app)

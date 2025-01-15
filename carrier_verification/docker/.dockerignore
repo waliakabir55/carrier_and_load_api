@@ -1,0 +1,70 @@
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile*
+docker-compose*
+.docker
+.dockerignore
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Development and test
+tests/
+test/
+*.test.py
+*.spec
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# SSL/TLS
+*.pem
+*.key
+*.crt
+*.cer
+*.der
+*.priv
+
+# Deployment
+deployment/
+*.zip
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
