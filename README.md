@@ -2,7 +2,7 @@
 
 This repository contains the codebase for the Carrier Verification and Load Management API. Here's an architecture overview:
 
-![alt text](<Screenshot 2025-01-15 at 9.15.35 AM.png>)
+![alt text](architecture.png)
 
 ## Project Structure
 
